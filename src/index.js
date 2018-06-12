@@ -16,6 +16,6 @@ if (userParams[0] === 'init' && userParams[1] === 'block' && userParams[2]) {
     spawnSync('sh', ['-c', myScript], {stdio: 'inherit', stdin: 'inherit'});
 }
 else {
-    console.log('Command is wrong.');
+    console.log('Command is wrong. Please go to src/materials/blocks and exec `xpage-devtools init block <your-block-name>`');
     process.exit(1);
 }
