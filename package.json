@@ -7,9 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "xpage-devtoos": "node ./src/index.js"
+    "xpage-devtoos": "./src/index.js"
   },
   "author": "yangzongjun",
   "license": "MIT"
 }
-git remote add origin https://github.com/bmxklYzj/xpage-devtools.git
