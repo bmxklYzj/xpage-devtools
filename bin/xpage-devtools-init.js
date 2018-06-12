@@ -5,17 +5,17 @@ var spawnSync = require('child_process').spawnSync;
 
 program
     .version(require('../package').version)
-    .usage('<template-name> <block-name>');
+    .usage('<block-name>');
 
 program.on('--help', function () {
     console.log('Example:');
     console.log('   # generate new block from github template');
-    console.log('   xpage-devtools init bmxklyzj/template-test my-block');
+    console.log('   xpage-devtools init my-block');
     console.log('');
 });
 
 program.parse(process.argv);
-if (program.args.length < 2) {
+if (program.args.length < 1) {
     return program.help();
 }
 
@@ -24,5 +24,5 @@ if (!/src\/materials\/blocks$/.test(process.cwd())) {
     process.exit(1);
 }
 
-var myScript = `vue init bmxklYzj/template-test ${program.args[1]}`;
+var myScript = `vue init bmxklYzj/template-test ${program.args[0]}`;
 spawnSync('sh', ['-c', myScript], {stdio: 'inherit', stdin: 'inherit'});
