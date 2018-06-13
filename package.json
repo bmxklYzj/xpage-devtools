@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "xpage-devtools": "bin/xpage-devtools.js",
-    "xpage-devtools-init": "bin/xpage-devtools-init.js"
+    "xpage": "bin/xpage.js",
+    "xpage-init": "bin/xpage-init.js"
   },
   "author": "yangzongjun",
   "license": "MIT",
