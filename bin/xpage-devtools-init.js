@@ -25,5 +25,5 @@ if (!/src\/materials\/blocks$/.test(process.cwd())) {
     process.exit(1);
 }
 
-var myScript = `vue init bmxklYzj/template-test ${program.args[1]}`;
+var myScript = `vue init bmxklYzj/xpage-block-template ${program.args[1]}`;
 spawnSync('sh', ['-c', myScript], {stdio: 'inherit', stdin: 'inherit'});
