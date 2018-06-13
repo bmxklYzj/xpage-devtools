@@ -9,8 +9,9 @@ program
 
 program.on('--help', function () {
     console.log('Example:');
+    console.log('');
     console.log('   # generate new block from github template');
-    console.log('   xpage-devtools init bmxklyzj/template-test my-block');
+    console.log('   xpage-devtools init block my-block');
     console.log('');
 });
 
