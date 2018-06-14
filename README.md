@@ -11,9 +11,10 @@ xpage init block <your-block-name>
 init项目时需要填写以下字段：
 
 ```
-name            block的中文名称
-version         版本
-description     block的描述
-categories      block的分类，单选
-author          作者邮箱
+name                没用到，vue-cli自动添加的，无需修改，不能为中文
+block Chinese title block的中文名称
+version             版本
+author              作者邮箱
+description         block的描述
+categories          block的分类，单选
 ```
