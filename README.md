@@ -6,7 +6,7 @@
 xpage init block <your-block-name>
 ```
 
-会拉取block模板并创建在当前blocks目录下，同时注入到router中。
+会拉取block模板并创建在当前blocks目录下。
 
 init项目时需要填写以下字段：
 
