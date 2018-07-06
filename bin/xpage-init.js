@@ -2,6 +2,7 @@
 
 var program = require('commander');
 var spawnSync = require('child_process').spawnSync;
+var path = require('path');
 
 program
     .version(require('../package').version)
@@ -20,7 +21,8 @@ if (program.args.length < 2) {
     return program.help();
 }
 
-if (!/src\/materials\/blocks$/.test(process.cwd())) {
+var dirPath = path.join('src', 'materials', 'blocks');
+if (process.cwd().lastIndexOf(dirPath) !== 0) {
     console.log('Please go to src/materials/blocks to init a block');
     process.exit(1);
 }
