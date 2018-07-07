@@ -21,6 +21,13 @@ if (program.args.length < 2) {
     return program.help();
 }
 
+require('child_process').exec('vue -V', function (err, cb) {
+    if (err) {
+        console.log('You may not have installed "vue-cli", use `npm i -g vue-cli`');
+        process.exit(1);
+    }
+});
+
 var dirPath = path.join('src', 'materials', 'blocks');
 if (process.cwd().lastIndexOf(dirPath) !== (process.cwd().length - dirPath.length)) {
     console.log('Please go to src/materials/blocks to init a block');
