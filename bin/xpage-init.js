@@ -21,7 +21,7 @@ if (program.args.length < 2) {
     return program.help();
 }
 
-var dirPath = path.join('src', 'materials', 'blocks') + '$';
+var dirPath = path.join('src', 'materials', 'blocks');
 if (process.cwd().lastIndexOf(dirPath) !== (process.cwd().length - dirPath.length)) {
     console.log('Please go to src/materials/blocks to init a block');
     process.exit(1);
